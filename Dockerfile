@@ -20,4 +20,3 @@ RUN   pip install tinkerer
 RUN   pip install sphinxcontrib-plantuml
 COPY  plantuml.jar /usr/local/plantuml/
 
-CMD ["/bin/bash"] 
