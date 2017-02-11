@@ -4,11 +4,11 @@
 # 使用
 
 
-把下面内容放到文件 docker-tinkerer.sh, 然后拷贝到 $PATH 包含的目录下(例如 /usr/local/bin )
+把下面内容放到文件 docker-tinker.sh, 然后拷贝到 $PATH 包含的目录下(例如 /usr/local/bin )
 ``` 
 #!/bin/sh
-docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app -u `id -u`:`id -g` pluswave/tinkerer "$@"
+docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app -u `id -u`:`id -g` pluswave/tinkerer tinker "$@"
 ```
 然后执行
 
-./docker-tinkerer.sh 代替 tinkerer 即可。
+./docker-tinker.sh 代替 tinker 即可。
