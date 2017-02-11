@@ -16,7 +16,11 @@ RUN   locale-gen
 ENV   LANG zh_CN.UTF-8
 
 RUN   pip install Sphinx
-RUN   pip install tinkerer
+RUN   apt-get install -y git
+RUN   git clone https://github.com/pluswave/tinkerer.git
+WORKDIR tinkerer
+RUN   python setup.py build
+RUN   python setup.py install
 RUN   pip install sphinxcontrib-plantuml
 COPY  plantuml.jar /usr/local/plantuml/
 
