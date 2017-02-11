@@ -11,4 +11,4 @@ docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app -u `id -u`:`id -g` plus
 ```
 然后执行
 
-./docker-tinker.sh 代替 tinker 即可。
+docker-tinker.sh 代替 tinker 即可。
